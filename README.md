@@ -15,3 +15,13 @@ newline ('\n'),
 tab ('\t'),  
 single quote ('\''),  
 and backslash ('\\').  
+
+Go also includes the ++ and -- operators to increment and decrement the value of a variable.  
+Unlike Java, C++, and several other languages, Go requires these operators to appear after the variable.
+
+```go
+var x int = 10
+x++ // ok
+++x  // syntax error, does not compile
+```
+
