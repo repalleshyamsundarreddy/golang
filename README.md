@@ -18,10 +18,23 @@ and backslash ('\\').
 
 Go also includes the ++ and -- operators to increment and decrement the value of a variable.  
 Unlike Java, C++, and several other languages, Go requires these operators to appear after the variable.
-
 ```go
-var x int = 10
-x++ // ok
-++x  // syntax error, does not compile
+var z int = 10
+z++ // ok
+++z  // syntax error, does not compile
 ```
+
+Adding one to a variable set to the maximum value for a type returns the minimum value for the type, and subtracting one from the minimum returns the maximum.  
+Be careful when writing code; don’t assume that z + 1 is always greater than z and z - 1 is always less than z.
+```go
+var x uint = 0
+z--
+fmt.Println(z) // prints 18446744073709551615
+z++
+fmt.Println(z) // prints 0
+```
+
+
+
+
 
