@@ -23,8 +23,9 @@ var z int = 10
 z++ // ok
 ++z  // syntax error, does not compile
 ```
-
-Adding one to a variable set to the maximum value for a type returns the minimum value for the type, and subtracting one from the minimum returns the maximum.  
+Value Overflow:  
+Adding one to a variable set to the maximum value for a type returns the minimum value for the type,  
+and subtracting one from the minimum returns the maximum.  
 Be careful when writing code; don’t assume that z + 1 is always greater than z and z - 1 is always less than z.
 ```go
 var x uint = 0
@@ -33,6 +34,11 @@ fmt.Println(z) // prints 18446744073709551615
 z++
 fmt.Println(z) // prints 0
 ```
+If you do want to write numerical computing applications in Go, use the third-party Gonum package.  
+It takes advantage of complex numbers and provides useful libraries for things like  
+linear algebra, matrices, integration, graphs, and statistics.  
+Other languages have better numerical computing support,  
+but Go’s focus on software engineering might be an advantage for larger projects.  
 
 
 
