@@ -1,4 +1,17 @@
 # golang
 Learning and Insights of Golang language. Thanks to Google.
 
-Unlike many languages, in Golang the single quote and double quote are not interchangeable.
+A rune literal represents a single Unicode code point and is surrounded by single quotes.  
+Unlike many other languages, in Go single quotes and double quotes are not interchangeable.  
+
+Rune literals can be written as  
+single Unicode characters ('a'),  
+8-bit octal numbers ('\141'),  
+8-bit hexadecimal numbers ('\x61'),  
+16-bit hexadecimal numbers ('\u0061'), or 
+32-bit Unicode numbers ('\U00000061').  
+There are also several backslash-escaped rune literals, with the most useful ones being 
+newline ('\n'),  
+tab ('\t'),  
+single quote ('\''),  
+and backslash ('\\').  
