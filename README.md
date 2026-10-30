@@ -10,11 +10,11 @@ single Unicode characters ('a'),
 8-bit hexadecimal numbers ('\x61'),  
 16-bit hexadecimal numbers ('\u0061'), or 
 32-bit Unicode numbers ('\U00000061').  
-There are also several backslash-escaped rune literals, with the most useful ones being 
+There are also several backslash-escaped rune literals, with the most useful ones being  
 newline ('\n'),  
 tab ('\t'),  
-single quote ('\''),  
-and backslash ('\\').  
+single quote ('\\''),  
+and backslash ('\\\\').  
 
 Go also includes the ++ and -- operators to increment and decrement the value of a variable.  
 Unlike Java, C++, and several other languages, Go requires these operators to appear after the variable.
